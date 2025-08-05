@@ -1,168 +1,109 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Website Desain Leo</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
-    }
-
-    body {
-      height: 100vh;
-      background: linear-gradient(-45deg, #ffd6e0, #ffaad4, #c7ceea, #b5ead7);
-      background-size: 400% 400%;
-      animation: gradientBG 15s ease infinite;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      color: #333;
-      text-align: center;
-      padding: 20px;
-    }
-
-    @keyframes gradientBG {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
-    }
-
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 20px;
-    }
-
-    .typing-text {
-      font-size: 1.2rem;
-      white-space: nowrap;
-      overflow: hidden;
-      border-right: 3px solid #ff69b4;
-      width: 0;
-      animation: typing 4s steps(40, end) forwards, blink 0.75s step-end infinite;
-    }
-
-    @keyframes typing {
-      from { width: 0; }
-      to { width: 100%; }
-    }
-
-    @keyframes blink {
-      from, to { border-color: transparent; }
-      50% { border-color: #ff69b4; }
-    }
-
-    p {
-      margin-top: 30px;
-      font-size: 1rem;
-      line-height: 1.6;
-    }
-
-    footer {
-      position: absolute;
-      bottom: 10px;
-      font-size: 0.9rem;
-    }
-
-    a {
-      color: #ff1493;
-      text-decoration: none;
-      font-weight: bold;
-    }
-  </style>
-</head>
-<body>
-  <h1> Web Desain Bucin Leo 🤭✨</h1>
-  <div class="typing-text">Gw desain ini dari hati, Dan Pastinya Duit On Top 🤭</div>
-  <p>
-    Scroll pelan ya, jangan buru-buru... takutnya kamu jatuh cinta juga 🤭<br>
-    Warna di sini bukan asal pilih — semua penuh makna ✨<br>
-    Kalau senyum pas baca ini... yaudah, jodoh 😚
-  </p>
-
-  <footer>
-    Dibuat dengan ❤️ oleh Leo — <a href="https://t.me/@Gilzz1233">DM Telegram yuk 🤙</a>
-  </footer>
-
-  <!-- AUDIO autoplay loop -->
-  <audio id="bg-audio" autoplay loop>
-    <source src="https://files.catbox.moe/vafdb8.mp3" type="audio/mpeg" />
-    Browser kamu nggak support audio 😔
-  </audio>
-
-  <script>
-    // Bypass autoplay block di beberapa browser (terutama HP)
-    window.addEventListener('click', function () {
-      const audio = document.getElementById('bg-audio');
-      if (audio.paused) {
-        audio.play();
-      }
-    });
-  </script>
-</body>
-</html>
-      font-size: 2.5rem;
-      margin-bottom: 20px;
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
 
-    .typing-text {
-      font-size: 1.2rem;
-      white-space: nowrap;
-      overflow: hidden;
-      border-right: 3px solid #ff69b4;
-      width: 0;
-      animation: typing 4s steps(40, end) forwards, blink 0.75s step-end infinite;
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: linear-gradient(to bottom right, #1f1f1f, #3a3a3a);
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      animation: fadeIn 2s ease;
     }
 
-    @keyframes typing {
-      from { width: 0; }
-      to { width: 100%; }
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
     }
 
-    @keyframes blink {
-      from, to { border-color: transparent; }
-      50% { border-color: #ff69b4; }
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: #2a2a2a;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.4);
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: #ff99c8;
     }
 
     p {
-      margin-top: 30px;
-      font-size: 1rem;
-      line-height: 1.6;
+      font-size: 1.2rem;
+      color: #ccc;
+    }
+
+    main {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    ul {
+      list-style: none;
+      margin-top: 2rem;
+    }
+
+    li {
+      background: #333;
+      margin-bottom: 1rem;
+      padding: 1rem;
+      border-left: 5px solid #ff99c8;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    li:hover {
+      background: #444;
+      transform: scale(1.01);
     }
 
     footer {
-      position: absolute;
-      bottom: 10px;
-      font-size: 0.9rem;
-    }
-
-    a {
-      color: #ff1493;
-      text-decoration: none;
-      font-weight: bold;
+      text-align: center;
+      padding: 1rem;
+      background: #1a1a1a;
+      color: #888;
     }
   </style>
 </head>
 <body>
-  <h1> Web Desain Bucin Leo 🤭✨</h1>
-  <div class="typing-text">Gw desain ini dari hati,Dan Pasti Nya Duit On Top🤭</div>
-  <p>
-    Scroll pelan ya, jangan buru-buru... takutnya kamu jatuh cinta juga 🤭<br>
-    Warna di sini bukan asal pilih — semua penuh makna ✨<br>
-    Kalau senyum pas baca ini... yaudah, jodoh 😚
-  </p>
 
-  <footer>
-    Dibuat dengan ❤️ oleh Leo — <a href="https://t.me/@Gilzz1233">DM Telegram yuk 🤙</a>
-  </footer>
+<audio autoplay loop>
+  <source src="https://files.catbox.moe/vafdb8.mp3" type="audio/mpeg">
+  Browser kamu tidak mendukung audio.
+</audio>
 
-  <audio autoplay loop>
-    <source src="https://files.catbox.moe/vafdb8.mp3" type="audio/mpeg" />
-  </audio>
+<header>
+  <h1>Web Desain Leo</h1>
+  <p>“Mungkin kita memang ditakdirkan cuma jadi kenangan.”</p>
+</header>
+
+<main>
+  <ul>
+    <li>📌 Tema: Web Desain Galau</li>
+    <li>🎨 Tampilan: Dark mode, simple, profesional</li>
+    <li>🎧 Musik autoplay loop</li>
+    <li>⚙️ Tidak error (HTML & CSS valid)</li>
+    <li>🚀 Bisa langsung di-upload ke GitHub Pages</li>
+  </ul>
+</main>
+
+<footer>
+  💔 Dibuat dari hati yang retak tapi tetap semangat ngoding.
+</footer>
+
 </body>
 </html>
